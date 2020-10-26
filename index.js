@@ -46,7 +46,7 @@ function popHandler() {
     const xhr = new XMLHttpRequest();
 
     // Open the object by GET request
-    xhr.open('GET', 'http://dummy.restapiexample.com/api/v1/employees', true);  // true is for asychronous request
+    xhr.open('GET', 'https://dummy.restapiexample.com/api/v1/employees', true);  // true is for asychronous request
 
     // What to do when response is ready
     xhr.onload = function () {
