@@ -1,5 +1,3 @@
-console.log('Ajax In ne Video')
-
 let fetchBtn = document.getElementById('fetchBtn');
 fetchBtn.addEventListener('click', buttonClickHandler);
 
@@ -10,8 +8,6 @@ function buttonClickHandler() {
     // Open the object by GET request
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);  // true is for asychronous request
 
-    // By the POST request
-    // xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/create', true);  // true is for asychronous request
     xhr.getResponseHeader('Content-type', 'application/json')
 
     // What to do on progress (optional)
@@ -50,7 +46,7 @@ function popHandler() {
     const xhr = new XMLHttpRequest();
 
     // Open the object by GET request
-    xhr.open('GET', 'http://dummy.restapiexample.com/api/v1/employees', true);  // true is for asychronous request
+    xhr.open('GET', 'https://dummy.restapiexample.com/api/v1/employees', true);  // true is for asychronous request
 
     // What to do when response is ready
     xhr.onload = function () {
